@@ -1,0 +1,32 @@
+{
+  "name": "multidim-array-index",
+  "version": "0.1.0",
+  "description": "recursive determinant computation using Laplace expansion",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js | ./node_modules/tap-min/bin/tap-min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fibo/multidim-array-index.git"
+  },
+  "keywords": [
+    "algebra"
+  ],
+  "author": "",
+  "license": [
+    {
+      "type": "MIT",
+      "url": "http://g14n.info/mit-license"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/fibo/multidim-array-index/issues"
+  },
+  "homepage": "https://github.com/fibo/multidim-array-index",
+  "devDependencies": {
+    "tap-min": "^1.0.0",
+    "tape": "^4.2.0"
+  },
+  "dependencies": {}
+}

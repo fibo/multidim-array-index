@@ -1,2 +1,6 @@
 # multidim-array-index
-Computes index of multi dimensional array
+
+> Computes index of multi dimensional array
+
+# Example
+
