@@ -1,6 +1,6 @@
 
-/*!
- * Compute index of multi dim array
+/**
+ * Compute index of multi dimensional array
  *
  * Given
  *
@@ -19,21 +19,21 @@
  * @returns {Number} index
  */
 
-function multiDimensionalArrayIndex(dimensions, indices) {
-  var l = dimensions.length - 1
-    , index = indices[l]
-    , factor
+function multiDimensionalArrayIndex (dimensions, indices) {
+  var len   = dimensions.length - 1,
+      index = indices[len],
+      factor
 
   if (dimensions.length > 1) {
-    factor = dimensions[l - 1]
+    factor = dimensions[len - 1]
 
-    index += factor * indices[l - 1]
+    index += factor * indices[len - 1]
   }
 
   for (var i = 2; i < dimensions.length; i++) {
-    factor *= dimensions[l - i + 1]
+    factor *= dimensions[len - i + 1]
 
-    index += factor * indices[l - i]
+    index += factor * indices[len - i]
   }
 
   return index

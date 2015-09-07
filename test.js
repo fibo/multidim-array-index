@@ -1,16 +1,14 @@
 
-var should = require('should')
+var multiDimArrayIndex = require('./index'),
+    test               = require('tape')
 
-var multiDimensionalArrayIndex = require('../src/multiDimensionalArrayIndex')
+test('Example', function (t) {
+  t.plan(1)
 
-var dimensions,
-    indices
+  t.ok(multiDimArrayIndex([3], [1]), 1)
 
-describe('multiDimensionalArrayIndex', function () {
+/*
   it('works for 1-dim arrays', function () {
-    dimensions = [3]
-    indices = [1]
-    multiDimensionalArrayIndex(dimensions, indices).should.eql(1)
   })
 
   it('works for 2-dim arrays', function () {
@@ -34,6 +32,7 @@ describe('multiDimensionalArrayIndex', function () {
     indices = [0, 0, 0]
     multiDimensionalArrayIndex(dimensions, indices).should.eql(0)
   })
+*/
 })
 
 
