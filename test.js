@@ -2,37 +2,32 @@
 var multiDimArrayIndex = require('./index'),
     test               = require('tape')
 
-test('Example', function (t) {
-  t.plan(1)
+test('1-dim', function (t) {
+  t.plan(3)
 
-  t.ok(multiDimArrayIndex([3], [1]), 1)
+  var i3 = multiDimArrayIndex.bind(null, [3])
 
-/*
-  it('works for 1-dim arrays', function () {
-  })
-
-  it('works for 2-dim arrays', function () {
-    dimensions = [2, 2]
-
-    indices = [0, 0]
-    multiDimensionalArrayIndex(dimensions, indices).should.eql(0)
-
-    indices = [0, 1]
-    multiDimensionalArrayIndex(dimensions, indices).should.eql(1)
-
-    indices = [1, 0]
-    multiDimensionalArrayIndex(dimensions, indices).should.eql(2)
-
-    indices = [1, 1]
-    multiDimensionalArrayIndex(dimensions, indices).should.eql(3)
-  })
-
-  it('works for 3-dim arrays', function () {
-    dimensions = [2, 2, 2]
-    indices = [0, 0, 0]
-    multiDimensionalArrayIndex(dimensions, indices).should.eql(0)
-  })
-*/
+  t.equal(i3([0]), 0)
+  t.equal(i3([1]), 1)
+  t.equal(i3([2]), 2)
 })
 
+test('2-dim', function (t) {
+  t.plan(4)
+
+  var i2x2 = multiDimArrayIndex.bind(null, [2, 2])
+
+  t.equal(i2x2([0, 0]), 0)
+  t.equal(i2x2([0, 1]), 1)
+  t.equal(i2x2([1, 0]), 2)
+  t.equal(i2x2([1, 1]), 3)
+})
+
+test('3-dim', function (t) {
+  t.plan(1)
+
+  var i2x2x2 = multiDimArrayIndex.bind(null, [2, 2, 2])
+
+  t.equal(i2x2x2([0, 0, 0]), 0)
+})
 

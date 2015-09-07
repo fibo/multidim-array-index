@@ -2,5 +2,3 @@
 
 > Computes index of multi dimensional array
 
-# Example
-
