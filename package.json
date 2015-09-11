@@ -1,7 +1,7 @@
 {
   "name": "multidim-array-index",
   "version": "0.1.0",
-  "description": "recursive determinant computation using Laplace expansion",
+  "description": "map multidimensional array indices to monodimensional array index",
   "main": "index.js",
   "scripts": {
     "test": "node test.js | ./node_modules/tap-min/bin/tap-min"
@@ -11,7 +11,8 @@
     "url": "https://github.com/fibo/multidim-array-index.git"
   },
   "keywords": [
-    "algebra"
+    "array",
+    "index"
   ],
   "author": "",
   "license": [
