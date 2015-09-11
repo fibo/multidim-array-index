@@ -1,6 +1,6 @@
 {
   "name": "multidim-array-index",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "map multidimensional array indices to monodimensional array index",
   "main": "index.js",
   "scripts": {
