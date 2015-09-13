@@ -1,4 +1,4 @@
 # multidim-array-index
 
-> Computes index of multi dimensional array
+> map multidimensional array indices to monodimensional array index
 
