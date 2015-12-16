@@ -11,7 +11,9 @@
   "main": "index.js",
   "scripts": {
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "test": "node test.js | ./node_modules/tap-min/bin/tap-min"
+    "standard": "standard *.js",
+    "tap": "node test.js | ./node_modules/tap-min/bin/tap-min",
+    "test": "npm run standard && npm run tap"
   },
   "repository": {
     "type": "git",

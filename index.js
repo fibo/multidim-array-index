@@ -1,4 +1,3 @@
-
 /**
  * Compute index of multi dimensional array
  *
@@ -20,9 +19,9 @@
  */
 
 function multiDimensionalArrayIndex (dimensions, indices) {
-  var len   = dimensions.length - 1,
-      index = indices[len],
-      factor
+  var len = dimensions.length - 1
+  var index = indices[len]
+  var factor = null
 
   if (dimensions.length > 1) {
     factor = dimensions[len - 1]
@@ -40,4 +39,3 @@ function multiDimensionalArrayIndex (dimensions, indices) {
 }
 
 module.exports = multiDimensionalArrayIndex
-

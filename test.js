@@ -1,6 +1,5 @@
-
-var multiDimArrayIndex = require('./index'),
-    test               = require('tape')
+var multiDimArrayIndex = require('./index')
+var test = require('tape')
 
 test('1-dim', function (t) {
   t.plan(3)
@@ -37,4 +36,3 @@ test('3-dim', function (t) {
   t.equal(i2x2x2([1, 1, 0]), 6)
   t.equal(i2x2x2([1, 1, 1]), 7)
 })
-
