@@ -6,7 +6,7 @@
 
 ## Example
 
-All code in the examples below is intended to be contained into a [single file](https://github.com/fibo/algebra-ring/blob/master/test.js).
+All code in the examples below is intended to be contained into a [single file](https://github.com/fibo/multidim-array-index/blob/master/test.js).
 
 ```
 // 1-dim
