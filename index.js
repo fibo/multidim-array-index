@@ -1,5 +1,5 @@
 /**
- * Compute index of multi dimensional array
+ * maps multidimensional array indices to monodimensional array index
  *
  * Given
  *
@@ -14,12 +14,11 @@
  *
  * @param {Array} dimensions
  * @param {Array} indices
- *
  * @returns {Number} index
  */
 
-function multiDimensionalArrayIndex (dimensions, indices) {
-  var len = dimensions.length - 1
+function multiDimArrayIndex (dimensions, indices) {
+    var len = dimensions.length - 1
   var index = indices[len]
   var factor = null
 
@@ -38,4 +37,4 @@ function multiDimensionalArrayIndex (dimensions, indices) {
   return index
 }
 
-module.exports = multiDimensionalArrayIndex
+module.exports = multiDimArrayIndex

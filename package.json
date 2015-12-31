@@ -10,25 +10,23 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "preversion": "npm run lint; npm run test",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "standard": "standard *.js",
-    "tap": "node test.js | ./node_modules/tap-min/bin/tap-min",
-    "test": "npm run standard && npm run tap"
+    "lint": "standard",
+    "test": "tape test.js | faucet"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fibo/multidim-array-index.git"
+    "url": "git://github.com/fibo/multidim-array-index.git"
   },
   "keywords": [
     "array",
+    "multidim",
     "index"
   ],
   "bugs": {
     "url": "https://github.com/fibo/multidim-array-index/issues"
   },
-  "devDependencies": {
-    "tap-min": "^1.0.0",
-    "tape": "^4.2.0"
-  },
+  "devDependencies": {},
   "dependencies": {}
 }
