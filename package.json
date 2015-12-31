@@ -10,7 +10,6 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "preversion": "npm run lint; npm run test",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "lint": "standard",
     "test": "tape test.js | faucet"
@@ -27,6 +26,9 @@
   "bugs": {
     "url": "https://github.com/fibo/multidim-array-index/issues"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "standard": "^5.4.1",
+    "tape": "^4.4.0"
+  },
   "dependencies": {}
 }

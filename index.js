@@ -10,15 +10,13 @@
  * index is computed by formula
  * index = i_n + i_(n-1) * d_n + i_(n-2) * d_n * d_(n-1) + ... + i_2 * d_n * d_(n-1) * ... * d_3 + i_1 * d_n * ... * d_2
  *
- * @function
- *
  * @param {Array} dimensions
  * @param {Array} indices
  * @returns {Number} index
  */
 
 function multiDimArrayIndex (dimensions, indices) {
-    var len = dimensions.length - 1
+  var len = dimensions.length - 1
   var index = indices[len]
   var factor = null
 
