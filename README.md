@@ -6,9 +6,9 @@
 
 * [Installation](#installation)
 * [Examples](#examples)
-    - [1-dim](#1-dim)
-    - [2-dim](#2-dim)
-    - [3-dim](#3-dim)
+    - [1th-order](#1th-order)
+    - [2th-order](#2th-order)
+    - [3th-order](#3th-order)
 * [API](#api)
 * [License](#license)
 
@@ -30,7 +30,7 @@ All code in the examples below is intended to be contained into a [single file](
 var multiDimArrayIndex = require('multidim-array-index')
 ```
 
-### 1-dim
+### 1th-order
 
 In the monodimensional case, it just returns the index itself.
 
@@ -42,7 +42,7 @@ i3([1]) // 1
 i3([2]) // 2
 ```
 
-### 2-dim
+### 2th-order
 
 For a two dimensional case, for instance a matrix, it is equivalent to the
 function `(i, j, numCols) => j + i * numCols`
@@ -58,7 +58,7 @@ i2x3([1, 1]) // 4
 i2x3([1, 2]) // 5
 ```
 
-### 3-dim
+### 3th-order
 
 ```javascript
 var i2x2x2 = multiDimArrayIndex.bind(null, [2, 2, 2])

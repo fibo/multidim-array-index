@@ -34,7 +34,8 @@ staticProps(error)({
  */
 
 function multiDimArrayIndex (dimensions, indices) {
-	console.log(arguments)
+  console.log(arguments)
+
   // Check that indices fit inside dimensions shape.
   for (var i = 0; i < dimensions.length; i++) {
     if (indices[i] > dimensions[i]) {
@@ -42,22 +43,20 @@ function multiDimArrayIndex (dimensions, indices) {
     }
   }
 
-  var len = dimensions.length - 1
-  var index = indices[len] // i_n
-  var factor = null
+  var order = dimensions.length
 
-  if (dimensions.length > 1) {
-    factor = dimensions[len - 1]
-	    console.log('factor', factor)
+  // Handle order 1
+  if (order === 1) return indices[0]
 
-    index += factor * indices[len - 1] // i_n + i_(n-1) * d_n
-	    console.log('index', index)
-  }
+ //* index = i_n + i_(n-1) * d_n + i_(n-2) * d_n * d_(n-1) + ... + i_2 * d_n * d_(n-1) * ... * d_3 + i_1 * d_n * ... * d_2
+  var n = order - 1
+  var factor = dimensions[n] // d_n
+  var index = indices[n] + factor * indices[n-1] // i_n + i_(n-1) * d_n
 
-  for (var i = 2; i < dimensions.length; i++) {
-    factor *= dimensions[len - i + 1]
+  for (var i = 2; i < order; i++) {
+    factor *= dimensions[n - i]
 
-    index += factor * indices[len - i]
+    index += factor * indices[n - i]
   }
 
   return index

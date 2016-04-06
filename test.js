@@ -7,7 +7,7 @@ var i3 = multiDimArrayIndex.bind(null, [3])
 var i2x3 = multiDimArrayIndex.bind(null, [2, 3])
 var i2x2x2 = multiDimArrayIndex.bind(null, [2, 2, 2])
 
-test('1-dim', function (t) {
+test('1th-order', function (t) {
   t.plan(3)
 
   t.equal(i3([0]), 0)
@@ -15,7 +15,7 @@ test('1-dim', function (t) {
   t.equal(i3([2]), 2)
 })
 
-test('2-dim', function (t) {
+test('2th-order', function (t) {
   t.plan(6)
 
   t.equal(i2x3([0, 0]), 0)
@@ -26,7 +26,7 @@ test('2-dim', function (t) {
   t.equal(i2x3([1, 2]), 5)
 })
 
-test('3-dim', function (t) {
+test('3th-order', function (t) {
   t.plan(8)
 
   t.equal(i2x2x2([0, 0, 0]), 0)
