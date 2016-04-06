@@ -1,7 +1,7 @@
 {
   "name": "multidim-array-index",
   "description": "maps multidimensional array indices to monodimensional array index",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "homepage": "http://npm.im/multidim-array-index",
   "author": {
     "name": "Gianluca Casati",
