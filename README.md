@@ -61,9 +61,26 @@ i2x3([1, 2]) // 5
 ### 3th-order
 
 ```javascript
-var i2x2x2 = multiDimArrayIndex.bind(null, [2, 2, 2])
+var i2x3x4 = multiDimArrayIndex.bind(null, [2, 2, 2])
 
-i2x2x2([0, 0, 0]) // 0
+i2x3x4([0, 0, 0]) // 0
+i2x3x4([0, 0, 1]) // 1
+i2x3x4([0, 0, 2]) // 2
+i2x3x4([0, 0, 3]) // 3
+i2x3x4([0, 1, 0]) // 4
+i2x3x4([0, 1, 1]) // 5
+i2x3x4([0, 1, 2]) // 6
+i2x3x4([0, 1, 3]) // 7
+i2x3x4([1, 0, 0]) // 8
+i2x3x4([1, 0, 1]) // 9
+i2x3x4([1, 0, 2]) // 10
+i2x3x4([1, 0, 3]) // 11
+i2x3x4([1, 1, 0]) // 12
+i2x3x4([1, 1, 1]) // 13
+i2x3x4([1, 1, 2]) // 14
+i2x3x4([1, 1, 3]) // 15
+
+i2x2x2([0, 0, 0]) //// 0
 i2x2x2([0, 0, 1]) // 1
 i2x2x2([0, 1, 0]) // 2
 i2x2x2([0, 1, 1]) // 3
@@ -100,7 +117,7 @@ For example, the following snippets will throw
 // outOfBoundIndex
 
 i3([11])
-i2x2x2([1, 2, 3])
+i2x3x4([2, 3, 5])
 ```
 
 ## License
