@@ -27,10 +27,11 @@
     "url": "https://github.com/fibo/multidim-array-index/issues"
   },
   "devDependencies": {
+    "faucet": "0.0.1",
     "standard": "^5.4.1",
     "tape": "^4.4.0"
   },
   "dependencies": {
-    "static-props": "^0.2.0"
+    "static-props": "^1.0.0"
   }
 }

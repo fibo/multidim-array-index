@@ -51,12 +51,12 @@ function multiDimArrayIndex (dimensions, indices) {
  //* index = i_n + i_(n-1) * d_n + i_(n-2) * d_n * d_(n-1) + ... + i_2 * d_n * d_(n-1) * ... * d_3 + i_1 * d_n * ... * d_2
   var n = order - 1
   var factor = dimensions[n] // d_n
-  var index = indices[n] + factor * indices[n-1] // i_n + i_(n-1) * d_n
+  var index = indices[n] + factor * indices[n - 1] // i_n + i_(n-1) * d_n
 
-  for (var i = 2; i < order; i++) {
-    factor *= dimensions[n - i]
+  for (var j = 2; j < order; j++) {
+    factor *= dimensions[n - j]
 
-    index += factor * indices[n - i]
+    index += factor * indices[n - j]
   }
 
   return index
