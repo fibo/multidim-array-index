@@ -34,8 +34,6 @@ staticProps(error)({
  */
 
 function multiDimArrayIndex (dimensions, indices) {
-  console.log(arguments)
-
   // Check that indices fit inside dimensions shape.
   for (var i = 0; i < dimensions.length; i++) {
     if (indices[i] > dimensions[i]) {
