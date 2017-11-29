@@ -2,9 +2,10 @@
 
 > maps multidimensional array indices to monodimensional array index
 
-[![NPM version](https://badge.fury.io/js/multidim-array-index.svg)](http://badge.fury.io/js/multidim-array-index) [![Build Status](https://travis-ci.org/fibo/multidim-array-index.svg?branch=master)](https://travis-ci.org/fibo/multidim-array-index?branch=master) [![Dependency Status](https://gemnasium.com/fibo/multidim-array-index.svg)](https://gemnasium.com/fibo/multidim-array-index)
-
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+[![NPM version](https://badge.fury.io/js/multidim-array-index.svg)](http://badge.fury.io/js/multidim-array-index)
+[![Build Status](https://travis-ci.org/fibo/multidim-array-index.svg?branch=master)](https://travis-ci.org/fibo/multidim-array-index?branch=master)
+[![Dependency Status](https://gemnasium.com/fibo/multidim-array-index.svg)](https://gemnasium.com/fibo/multidim-array-index)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 **Table Of Contents:**
 
@@ -20,7 +21,7 @@
 
 With [npm](https://www.npmjs.com/) do
 
-```
+```bash
 npm install multidim-array-index
 ```
 
