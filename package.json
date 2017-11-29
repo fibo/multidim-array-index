@@ -2,7 +2,7 @@
   "name": "multidim-array-index",
   "description": "maps multidimensional array indices to monodimensional array index",
   "version": "0.5.0",
-  "homepage": "http://npm.im/multidim-array-index",
+  "homepage": "http://g14n.info/multidim-array-index",
   "author": {
     "name": "Gianluca Casati",
     "url": "http://g14n.info"
@@ -10,10 +10,15 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "check-deps": "npm outdated",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
-    "lint": "standard",
+    "lint": "standa",
     "test": "tape test.js"
   },
+  "pre-commit": [
+    "check-deps",
+    "lint"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/fibo/multidim-array-index.git"
@@ -27,7 +32,8 @@
     "url": "https://github.com/fibo/multidim-array-index/issues"
   },
   "devDependencies": {
-    "standard": "^5.4.1",
+    "pre-commit": "^1.2.2",
+    "standa": "^1.1.0",
     "tape": "^4.4.0"
   },
   "dependencies": {
