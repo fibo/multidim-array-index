@@ -8,16 +8,17 @@
     "url": "http://g14n.info"
   },
   "license": "MIT",
-  "main": "index.js",
+  "main": "multidim-array-index.js",
   "scripts": {
     "check-deps": "npm outdated",
     "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "lint": "standa",
-    "test": "tape test.js"
+    "test": "NODE_PATH=. tape test.js"
   },
   "pre-commit": [
     "check-deps",
-    "lint"
+    "lint",
+    "test"
   ],
   "repository": {
     "type": "git",
@@ -32,9 +33,10 @@
     "url": "https://github.com/fibo/multidim-array-index/issues"
   },
   "devDependencies": {
+    "dot-editorconfig": "^1.1.0",
     "pre-commit": "^1.2.2",
-    "standa": "^1.1.0",
-    "tape": "^4.4.0"
+    "standa": "^2.0.1",
+    "tape": "^4.9.0"
   },
   "dependencies": {
     "static-props": "^1.0.0"

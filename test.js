@@ -1,4 +1,4 @@
-var multiDimArrayIndex = require('./index')
+var multiDimArrayIndex = require('multidim-array-index')
 var test = require('tape')
 
 var error = multiDimArrayIndex.error
